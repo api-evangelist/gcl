@@ -1,7 +1,26 @@
 aid: gcl
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/gcl.png
 name: GCL
-description: GCL is a company surfaced as a portfolio company of balderton-capital and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  GCL System Integration Technology Co., Ltd. (GCL SI, Shenzhen: 002506) is one of
+  the four listed companies of China's GCL Group and a global leading provider of
+  photovoltaic and clean-energy solutions. Headquartered in Suzhou Industrial Park,
+  Jiangsu Province, the company manufactures high-efficiency solar cells, large-size
+  photovoltaic modules, energy-storage systems, and next-generation perovskite solar
+  technology, with operations spanning six continents. Surfaced as a portfolio company
+  of Balderton Capital and added to the API Evangelist network; GCL SI is an industrial
+  manufacturer and publishes no public developer/API surface at this time.
 url: https://raw.githubusercontent.com/api-evangelist/gcl/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Solar
+- Photovoltaic
+- Renewable Energy
+- Energy Storage
+- Clean Energy
+- Solar Modules
+- Manufacturing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/gcl-domain-security.yml
 - type: Website
-  url: https://www.gclsi.com/en/about-gcl
+  url: https://en.gclsi.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
